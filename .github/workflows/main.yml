@@ -15,27 +15,13 @@ jobs:
         with:
           working-directory: server
       - name: Instalar as dependencias do web
-        uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@1
         with:
           working-directory: web
-      - name: Component $ API & UI
+      - name:Component & API & UI Tests
         uses: cypress-io/github-action@v2
         with:
           working-directory: web
           install: false
           start: npm run start:ci
-          wait-on: 'http://localhost:3000'
-          
-      - name: Upload screenshots
-        uses: actions/upload-artifact@v2.2.0
-        if: failure()
-        with:
-          name: screenshots
-          path: web/cypress/screenshots
-          
-      - name: Upload videos
-        uses: actions/upload-artifact@v2.2.0
-        if: always()
-        with:
-          name: videos
-          path: web/cypress/videos
+          wait-on: 'http//localhost3000'
