@@ -28,7 +28,7 @@ context('Classes endpoint', () => {
         }).then((response) => {
             
             expect(response.status).to.eq(201)
-            expect(response.duration).lessThan(2000)
+            expect(response.duration).to.lt(200)
             expect(response.duration).to.gt(5)
 
         })
