@@ -30,7 +30,6 @@ context('PageHeader component', () => {
         cy.get('p').as('description')
         cy.get('.page-header').as('header')
 
-
         cy.get('@title').should('have.text', title)
         cy.get('@description').should('have.text', description)
 
