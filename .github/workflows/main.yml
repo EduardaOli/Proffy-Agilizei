@@ -3,3 +3,7 @@ name: Run Tests
 on:
   push:
     branches: [master]
+
+jobs: 
+  cypress-run:
+    runs-on: ubuntu-16.04
