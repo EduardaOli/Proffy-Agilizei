@@ -12,3 +12,8 @@
   g. teste o start da aplicação: `npm start`
 
 *Pronto, agora é só acompanhar a aula* ⚡️
+
+# [Chapter 3] Nesse modulo foi abordado a estrutura de uma aplicação para explorar testes de componentes, API e UI.
+
+* Sobre a estrutura de uma aplicação foi possível entender a arquitura que um software se dividi e a responsabilidade de cada processo. Onde com uma unica aplicação foi realizável testes nas camadas apontadas.
+* Explorando ainda testes de interfaces responsivas e entegração contínua com o GitHub Actions (explorando mais features);
